@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  postgreSQL:
+    image: postgres_postgis_16
+    container_name: postgres_postgis
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    env_file:
+      - postgresql.env
+    volumes:
+      - .\data:/var/lib/postgresql/data
+      - .\pg_extra:/pg_extra

@@ -1,0 +1,6 @@
+# Ignore o arquivo nifi.env
+postgresql.env
+
+# Igonre as pastas de dados
+/data/
+/pg_extra/
